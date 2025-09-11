@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Lampu Merah</title>
+  </head>
+  <body>
+    <script>
+      let lampu = prompt(
+        "Masukkan warna lampu (merah, kuning, hijau):"
+      ).toLowerCase();
+      if (lampu === "merah") {
+        document.write("<h2 style='color: red;'>Anda Harus Berhenti</h2>");
+      } else if (lampu === "kuning") {
+        document.write(
+          "<h2 style='color: orange;'>Anda Hati-hati kalau Berjalan</h2>"
+        );
+      } else if (lampu === "hijau") {
+        document.write("<h2 style='color: green;'>Anda harus Berjalan</h2>");
+      } else {
+        document.write("<h2 style='color: gray;'>Warna tidak valid</h2>");
+      }
+    </script>
+  </body>
+</html>
