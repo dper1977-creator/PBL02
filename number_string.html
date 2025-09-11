@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number;
+      number = 42;
+      const anotherNumber = number + 30.8;
+      const smallNumber = -3.7e-3;
+      const bigNumber = 5.2e6;
+      const manyDigits = 3_530_755.383_725;
+      document.write("<p>first Number: " + number + "<br>");
+      document.write("another Number: " + anotherNumber + "<br>");
+      document.write("additional incorrect: " + anotherNumber + 25 + "<br>");
+      document.write("additional correct: " + (anotherNumber + 25) + "<br>");
+      document.write("small Number: " + smallNumber + "<br>");
+      document.write("big Number: " + bigNumber + "<br>");
+      document.write("many Digits: " + manyDigits + "<br>");
+    </script>
+  </body>
+</html>
