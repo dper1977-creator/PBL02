@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tx;
+      tx = "This";
+      document.write("<p>" + tx + "<br> ");
+      tx = tx + "is a";
+      document.write(tx + "<br> ");
+      tx += " sentence.";
+      document.write(tx + "</p> ");
+      let z;
+      z = 6;
+      document.write("<p>" + z + " ");
+      z++;
+      document.write(z + " "); // dihitung dulu baru ditampilkan
+      ++z;
+      document.write(z + " "); // dihitung dulu baru ditampilkan
+      z--;
+      document.write(z + " ");
+      z += 13;
+      document.write(z + " "); // ditambah dulu baru ditampilkan
+      z -= 5;
+      document.write(z + " ");
+      z *= 3;
+      document.write("<p>" + z + " ");
+      z /= 6;
+      document.write(z + " ");
+      z %= 3;
+      document.write(z + "</p>"); // sisa bagi di tampilkan
+      let a = 5,
+        b = 5,
+        c = 5,
+        d;
+      d = a++;
+      document.write("<p>" + d + " "); // d = 5, a = 6
+      d = ++b;
+      document.write(d + " "); // b = 6, d = 6
+      d = c++ + ++C + C++;
+      document.write(d + "</P>"); // c = 8, d = 5 + 7 + 7 = 19
+    </script>
+  </body>
+</html>
