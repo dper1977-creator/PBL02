@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buat Status</title>
+  </head>
+  <body>
+    <script>
+      const nama = prompt("Masukkan nama Anda:");
+      const jenis_kelamin = prompt("Masukkan jenis kelamin:");
+      const status = prompt("Masukkan status Anda:");
+      if (jenis_kelamin == "pria" && status == "sendiri") {
+        document.write(
+          "nama: " +
+            nama +
+            "<br>" +
+            "jenis kelamin: " +
+            jenis_kelamin +
+            "<br>" +
+            "status: " +
+            status +
+            "<br>" +
+            "keterangan: " +
+            "perjaka" +
+            "<br>"
+        );
+      } else if (jenis_kelamin == "pria" && status == "kawin") {
+        document.write(
+          "nama: " +
+            nama +
+            "<br>" +
+            "jenis kelamin: " +
+            jenis_kelamin +
+            "<br>" +
+            "status: " +
+            status +
+            "<br>" +
+            "keterangan: " +
+            "Menikah" +
+            "<br>"
+        );
+      } else if (jenis_kelamin == "pria" && status == "cerai") {
+        document.write(
+          "nama: " +
+            nama +
+            "<br>" +
+            "jenis kelamin: " +
+            jenis_kelamin +
+            "<br>" +
+            "status: " +
+            status +
+            "<br>" +
+            "keterangan: " +
+            "Duda" +
+            "<br>"
+        );
+      } else if (jenis_kelamin == "wanita" && status == "sendiri") {
+        document.write(
+          "nama: " +
+            nama +
+            "<br>" +
+            "jenis kelamin: " +
+            jenis_kelamin +
+            "<br>" +
+            "status: " +
+            status +
+            "<br>" +
+            "keterangan: " +
+            "Perawan" +
+            "<br>"
+        );
+      } else if (jenis_kelamin == "wanita" && status == "kawin") {
+        document.write(
+          "nama: " +
+            nama +
+            "<br>" +
+            "jenis kelamin: " +
+            jenis_kelamin +
+            "<br>" +
+            "status: " +
+            status +
+            "<br>" +
+            "keterangan: " +
+            "Menikah" +
+            "<br>"
+        );
+      } else if (jenis_kelamin == "wanita" && status == "cerai") {
+        document.write(
+          "nama: " +
+            nama +
+            "<br>" +
+            "jenis kelamin: " +
+            jenis_kelamin +
+            "<br>" +
+            "status: " +
+            status +
+            "<br>" +
+            "keterangan: " +
+            "Janda" +
+            "<br>"
+        );
+      } else {
+        document.write("data yang anda masukkan salah");
+      }
+    </script>
+  </body>
+</html>

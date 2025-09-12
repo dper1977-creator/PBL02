@@ -9,7 +9,9 @@
     <script>
       let lampu = prompt(
         "Masukkan warna lampu (merah, kuning, hijau):"
-      ).toLowerCase();
+      ).toLowerCase(); // Merah, meRah,meraH --> merah<> toUpperCase() --> mengubah semua perintah harus menggunakan huruf besar
+      let pesan = ""; // menampung pesan
+
       if (lampu === "merah") {
         document.write("<h2 style='color: red;'>Anda Harus Berhenti</h2>");
       } else if (lampu === "kuning") {
@@ -19,7 +21,9 @@
       } else if (lampu === "hijau") {
         document.write("<h2 style='color: green;'>Anda harus Berjalan</h2>");
       } else {
-        document.write("<h2 style='color: gray;'>Warna tidak valid</h2>");
+        document.write(
+          "<h2 style='color: gray;'>Sebaiknya Anda Jalan Menepi</h2>"
+        );
       }
     </script>
   </body>
