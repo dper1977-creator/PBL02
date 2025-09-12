@@ -7,9 +7,9 @@
   </head>
   <body>
     <script>
-      const nama = prompt("Masukkan nama Anda:");
-      const jenis_kelamin = prompt("Masukkan jenis kelamin:");
-      const status = prompt("Masukkan status Anda:");
+      const nama = prompt("Masukkan nama Anda:").toLowerCase();
+      const jenis_kelamin = prompt("Masukkan jenis kelamin:").toLowerCase();
+      const status = prompt("Masukkan status Anda:").toLowerCase();
       if (jenis_kelamin == "pria" && status == "sendiri") {
         document.write(
           "nama: " +
