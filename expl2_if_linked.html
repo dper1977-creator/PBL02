@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const number_random = Math.random();
+      const input = prompt("Masukkan angka dari 0 ke 1, tanpa 1");
+      const number_input = parseFloat(input);
+      const distance = Math.abs(number_random - number_input);
+      if (input == null) document.write("batal");
+      else if (input === "") document.write("anda belum memasukkan angka");
+      else if (isNaN(input)) document.write("yang anda masukkan bukan angka");
+      else if (number_input < 0 || number_input >= 1)
+        document.write("angka yang anda masukkan tidak sesuai ketentuan");
+      else if (distance < 0.1) document.write("Selamat! anda sudah dekat");
+      else document.write("Anda melampaui batas");
+      document.write("<br><br>angka random: " + number_random + "<br>");
+      document.write("Input: " + input + "<br>");
+      document.write("isNaN(): " + isNaN(input) + "<br>");
+      document.write("Angka: " + number_input + "<br>");
+      const number_diff = number_random - number_input;
+      document.write("Jarak: " + distance + "<br>");
+      document.write("Difference: " + number_diff + "<br>");
+      documen.write("distance: " + distance);
+    </script>
+  </body>
+</html>
