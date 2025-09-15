@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cari Tanggal Lahir dari NIK</title>
+</head>
+<body>
+
+<script>
+  let Nama = prompt("Nama", "");
+  let NIK_asli = prompt("NIK (18 digit)", "");
+
+  if (NIK_asli.length !== 18) {
+    alert("NIK harus 18 digit!");
+  } else {
+    // ambil 8 digit pertama (tanggal lahir)
+    let tglLahirRaw = NIK_asli.slice(0, 8);
+    let year  = tglLahirRaw.slice(0, 4);
+    let month = tglLahirRaw.slice(4, 6);
+    let day   = tglLahirRaw.slice(6, 8);
+
+    let date = new Date(`${year}-${month}-${day}`);
+    let Tanggal_Lahir = date.toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" });
+
+    // ASN (6 digit berikutnya)
+    let ASN = NIK_asli.slice(8, 14);
+    let tahun  = ASN.slice(0, 4);
+    let bulan  = ASN.slice(4, 6);
+    let tgl = new Date(`${tahun}-${bulan}-01`);
+    let New_ASN = tgl.toLocaleDateString("id-ID", { month: "long", year: "numeric" });
+
+    // Jenis kelamin
+    let Jenis_Kelamin = NIK_asli.slice(14, 15);
+    if (Jenis_Kelamin === "1")
+      Jenis_Kelamin = "Pria";
+    else if (Jenis_Kelamin === "2")
+      Jenis_Kelamin = "Wanita";
+    else
+      Jenis_Kelamin = "Tidak diketahui";
+
+    // No urut
+    let No_Urut = NIK_asli.slice(15);
+
+    // Preview
+    document.write("<h3>Hasil Data</h3>");
+    document.write("Nama: " + Nama + "<br>");
+    document.write("NIK: " + NIK_asli + "<br>");
+    document.write("Tanggal lahir: " + Tanggal_Lahir + "<br>");
+    document.write("ASN (TMT): " + New_ASN + "<br>");
+    document.write("Jenis Kelamin: " + Jenis_Kelamin + "<br>");
+    document.write("No. Urut: " + No_Urut + "<br>");
+  }
+
+  // contoh NIK/NIP: 197209172005011002
+</script>
+</body>
+</html>
