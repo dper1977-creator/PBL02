@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HELLO...WORLD...</title>
-  </head>
-  <body>
-    <p>
-      <script>
-        let hellotext; // Deklarasi variabel
-        helloText = "Hello bumi"; // Inisiasi nilai ke variabel
-        let helloText;
-        document.write("text: " + helloText + "<br>");
-        helloText = "Good Morning";
-        document.write("text: " + helloText + "<br>");
-        let text2 = "declaration and value";
-        document.write("text: " + Text2 + "<br>");
-        let text3 = "with single quotation mark";
-        document.write("text: " + Text3 + "<br>");
-        let text4;
-        document.write("text: " + Text4 + "<br>");
-        // document.write("text:" + text5 + "<br>");
-        // text5 = "no declaration";
-        // document.write("text: " + text5 + "<br>");
-        const text6 = "cannot be change";
-        document.write("text: " + text6 + "<br");
-        // text6 = "not allowed";
-        document.write("end");
-      </script>
-    </p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HELLO...WORLD...</title>
+</head>
+<body>
+<p>
+  <script>
+    // deklarasi variabel dengan let
+    let helloText;
+    helloText = "Hello bumi";
+    document.write("text: " + helloText + "<br>");
+
+    // ubah nilai variabel
+    helloText = "Good Morning";
+    document.write("text: " + helloText + "<br>");
+
+    // deklarasi langsung dengan nilai
+    let text2 = "Declaration and value";
+    document.write("text: " + text2 + "<br>");
+
+    // pakai tanda kutip tunggal
+    let text3 = 'with single quotation mark';
+    document.write("text: " + text3 + "<br>");
+
+    // variabel tanpa nilai → undefined
+    let text4;
+    document.write("text: " + text4 + "<br>");
+
+    // const → tidak bisa diubah nilainya
+    const text6 = "cannot be change";
+    document.write("text: " + text6 + "<br>");
+
+    // penutup
+    document.write("end");
+  </script>
+</p>
+</body>
 </html>
