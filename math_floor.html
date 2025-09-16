@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const number_random = Math.random() * 20 + 1;
+    const a = math.floor(number_random);
+    const b = math.floor(math.random() * 20 + 1);
+    const sum = a + b;
+    let number_input;
+    do {
+        const input = prompt(a + " + " + b + " = ");
+        number_input = preseInt(input);
+        if(number_input !== sum)
+            alert("please try egain");
+        }
+    while(number_input !== sum);
+    document.write(a + " + " + b + " = " + sum);
+</script>
+</body>
+</html>
