@@ -9,7 +9,7 @@ USE warung;
 CREATE TABLE Pelanggan (
   Kode     VARCHAR(5) PRIMARY KEY,
   Nama     VARCHAR(50),
-  Kelamin  VARCHAR(10),
+  Gender  VARCHAR(10),
   Alamat   VARCHAR(100),
   Kota     VARCHAR(50)
 );
@@ -38,7 +38,7 @@ CREATE TABLE Penjualan (
 
 -- INSERT DATA PELANGGAN
 -- ============================
-INSERT INTO Pelanggan (Kode, Nama, Kelamin, Alamat, Kota) VALUES
+INSERT INTO Pelanggan (Kode, Nama, Gender, Alamat, Kota) VALUES
 ('PLG01','Mohamad','Pria','Priok','Jakarta'),
 ('PLG02','Naufal','Pria','Cilincing','Jakarta'),
 ('PLG03','Atila','Pria','Bojongsong','Bandung'),
@@ -94,4 +94,50 @@ ORDER BY pj.Tgl_Jual, pj.No_Jual;
 
 -- PROCEDUR PENCARIAN PENJUALAN
 -- ============================
+DELIMITER //
+CREATE PROCEDURE CariJumlahProduk(IN pKodeProduk VARCHAR(5))
+BEGIN
+    SELECT 
+        pr.Nama AS Nama_Produk,
+        SUM(pj.Jumlah) AS Total_Terjual
+    FROM Penjualan pj
+    JOIN Produk pr ON pj.KodeProduk = pr.Kode
+    WHERE pj.KodeProduk = pKodeProduk
+    GROUP BY pr.Nama;
+
+-- PROCEDURE CARI JUMLAH PRODUK
+-- ============================
+DELIMITER $$
+
+CREATE PROCEDURE CariJumlahProduk(IN pKodeProduk VARCHAR(5))
+BEGIN
+    SELECT 
+        pr.Nama AS Nama_Produk,
+        SUM(pj.Jumlah) AS Total_Terjual
+    FROM Penjualan pj
+    JOIN Produk pr ON pj.KodeProduk = pr.Kode
+    WHERE pj.KodeProduk = pKodeProduk
+    GROUP BY pr.Nama;
+END $$
+
+-- PROCEDURE CARI JUMLAH PELANGGAN
+-- ============================
+CREATE PROCEDURE CariJumlahPelanggan(IN pKodePelanggan VARCHAR(5))
+BEGIN
+    SELECT 
+        pl.Nama AS Nama_Pelanggan,
+        SUM(pj.Jumlah * pr.Harga) AS Total_Belanja
+    FROM Penjualan pj
+    JOIN Pelanggan pl ON pj.KodePelanggan = pl.Kode
+    JOIN Produk pr ON pj.KodeProduk = pr.Kode
+    WHERE pj.KodePelanggan = pKodePelanggan
+    GROUP BY pl.Nama;
+END $$
+
+DELIMITER ;
+
+-- PEMANGGILAN PROCEDURE
+-- ============================
+-- Total belanja pelanggan "Naufal" (PLG02)
+CALL CariJumlahPelanggan('PLG02');
 
