@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Yayasan Muda Peduli Saudara</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00AEEF",
+                        secondary: "#8DC63F",
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#1E293B",
+                        "text-light": "#334155",
+                        "text-dark": "#E2E8F0",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#334155"
+                    },
+                    fontFamily: {
+                        display: ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-icons {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-50 shadow-md">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <img alt="Logo Yayasan Muda Peduli Saudara" class="h-16 w-auto" src="D:\PBL02\design_thinking\tugas\logo mps.png"
+                <div class="ml-4">
+                    <h1 class="text-3xl font-bold text-primary">Muda Peduli Saudara</h1>
+                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a class="text-text-light dark:text-text-dark hover:text-primary transition-colors" href="#">Beranda</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary transition-colors" href="#">Tentang Kami</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary transition-colors" href="#">Program</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary transition-colors" href="#">Galeri</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary transition-colors" href="#">Berita &amp; Acara</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary transition-colors" href="#">Kontak</a>
+                </nav>
+                <a class="bg-primary text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-opacity-90 transition-all" href="#">Donasi Sekarang</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <video autoplay="" class="absolute inset-0 w-full h-full object-cover" loop="" muted="" playsinline="">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-group-of-people-volunteering-in-a-community-4045-large.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <div class="relative z-10 px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up">Bersama, Kita Ciptakan Senyum Saudara.</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Muda Peduli Saudara adalah gerakan sosial yang berdedikasi untuk membantu sesama melalui pendidikan, dan bantuan sosial.</p>
+            <a class="bg-white text-primary font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition-all" href="#">Kenali Lebih Jauh</a>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-background-dark">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-text-light dark:text-text-dark">Siapa Kami?</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-12">Kami adalah sekelompok anak muda yang percaya bahwa setiap tindakan kecil dapat membawa perubahan besar. Yayasan kami berkomitmen untuk menjadi jembatan kebaikan bagi mereka yang membutuhkan.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-lg text-center">
+                    <span class="material-icons text-primary text-5xl mb-4">school</span>
+                    <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Pendidikan &amp; Literasi</h3>
+                    <p class="text-text-light dark:text-text-dark/80">Memberikan akses pendidikan berkualitas untuk anak-anak prasejahtera.</p>
+                </div>
+                <div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-lg text-center">
+                    <span class="material-icons text-primary text-5xl mb-4">volunteer_activism</span>
+                    <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Bantuan Kemanusiaan</h3>
+                    <p class="text-text-light dark:text-text-dark/80">Menyalurkan bantuan untuk korban bencana dan masyarakat yang membutuhkan.</p>
+                </div>
+                <div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-lg text-center">
+                    <span class="material-icons text-primary text-5xl mb-4">groups</span>
+                    <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Pemberdayaan Sosial</h3>
+                    <p class="text-text-light dark:text-text-dark/80">Mengadakan program untuk meningkatkan keterampilan dan kesejahteraan sosial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-gray-50 dark:bg-slate-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-text-light dark:text-text-dark">Program Unggulan Kami</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-lg overflow-hidden group">
+                    <img alt="Donasi anak yatim" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC-8lLOyi5ei9VRBnG3yMBEK30hseXF3pN88gs05SDNR_mYdLj6leSDWmOwpublaEhEKAtkS4l3--R8jBvuiIBM59DrYncKkzzhJ0_bc-nXArAdmWzaxdbW_Myd-GtoWwD1qC1a9MfrGD5M5FMxtdzStG643YetyEzqmGji12kYiGw4FxqH_6bHW5HRMJAmysjbTsFSIHPCLwZ_QPA2n9ridlpDPF5fZVzgHH52r52Aa80hdNDm3panRwWTK6Ls7tJX3b-kMvjez5Y"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Santunan Anak Yatim</h3>
+                        <p class="mb-4 text-text-light dark:text-text-dark/80">Memberikan dukungan finansial dan moral untuk masa depan anak-anak yatim.</p>
+                        <a class="font-semibold text-primary hover:underline" href="#">Lihat Detail →</a>
+                    </div>
+                </div>
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-lg overflow-hidden group">
+                    <img alt="Aksi Pendidikan Sosial" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyhhsOWuoMubajMAQ1bml_GxtLqFTZyoqpHhIHJLJ5r6qaiOCBlqxmdEHrF6738C9yy4UpLqX0iQdItUNRGbZ5AozJ9G4EqWZNFWOEd_IU87bB-bTM8XDSg2bRmlW4URaOhu-6v5dpmzIDDg4RzF-vfQ9O13Xlb4pBQqSLLam-Om6X5u7mbrePEYVAfvF8v4yEY9j-LrKZfjG1FBgdJ6ytnfKLzpMSgw3vp8b6pBlWAcROvdelC_07lQwyylzYw1L6PmB1X79D1cpc"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Aksi Pendidikan Sosial</h3>
+                        <p class="mb-4 text-text-light dark:text-text-dark/80">Mengajar dan menyediakan alat tulis untuk anak-anak di daerah terpencil.</p>
+                        <a class="font-semibold text-primary hover:underline" href="#">Lihat Detail →</a>
+                    </div>
+                </div>
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-lg overflow-hidden group">
+                    <img alt="Gerakan Sedekah" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBic9R5E-46eXJuMz9wu94IMYjUgljnSg7Uhpvs6XBk6Q4pdbjd_nc77Us0xHZElbpq58Jy4_iu_R3qt309TaGI_evR47nLW7iIX9qcHlY3TQGsUYfKmiBfa0_4jIpZIW5GmjBP9FwMYHv4k0oKSiBbZqvQw5XUKlpbI8-pdVT99FGxE3xnhqA4auPNXzoabBdOOoQtT5mYlWGGCJ0NfGcTg9bm6rXD6WWKjTKr3ysMk_o5wPgqcwbKlwW3WPXLbC1H8Tnl876JxMd0"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Gerakan Sedekah Pangan</h3>
+                        <p class="mb-4 text-text-light dark:text-text-dark/80">Membagikan paket makanan bergizi kepada keluarga yang membutuhkan.</p>
+                        <a class="font-semibold text-primary hover:underline" href="#">Lihat Detail →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-10">Dampak yang Telah Kami Ciptakan</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <p class="text-4xl font-bold">100+</p>
+                    <p class="text-lg">Anak Didik</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold">5000+</p>
+                    <p class="text-lg">Paket Sembako</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold">10+</p>
+                    <p class="text-lg">Desa Terbantu</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold">250+</p>
+                    <p class="text-lg">Relawan Terlibat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-background-dark">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12 text-text-light dark:text-text-dark">Bagaimana Anda Dapat Membantu?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-lg">
+                    <span class="material-icons text-primary text-5xl mb-4">paid</span>
+                    <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Donasi</h3>
+                    <p class="mb-4 text-text-light dark:text-text-dark/80">Dukungan finansial Anda sangat berarti untuk kelangsungan program kami.</p>
+                    <a class="mt-auto bg-primary text-white font-bold py-2 px-6 rounded-lg hover:bg-opacity-90 transition-all" href="#">Donasi Sekarang</a>
+                </div>
+                <div class="flex flex-col items-center bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-lg">
+                    <span class="material-icons text-primary text-5xl mb-4">diversity_3</span>
+                    <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Jadi Relawan</h3>
+                    <p class="mb-4 text-text-light dark:text-text-dark/80">Bergabunglah dengan tim kami dan berikan kontribusi nyata di lapangan.</p>
+                    <a class="mt-auto bg-secondary text-white font-bold py-2 px-6 rounded-lg hover:bg-opacity-90 transition-all" href="#">Daftar Relawan</a>
+                </div>
+                <div class="flex flex-col items-center bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-lg">
+                    <span class="material-icons text-primary text-5xl mb-4">share</span>
+                    <h3 class="text-xl font-bold mb-2 text-text-light dark:text-text-dark">Sebarkan Kabar</h3>
+                    <p class="mb-4 text-text-light dark:text-text-dark/80">Ikuti dan bagikan kegiatan kami di media sosial untuk menjangkau lebih banyak orang baik.</p>
+                    <div class="mt-auto flex space-x-4">
+                        <a class="text-primary hover:text-opacity-80 transition-colors" href="#"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h5.713c.735 0 1.325-.59 1.325-1.325V1.325C24 .59 23.405 0 22.675 0z"></path></svg></a>
+                        <a class="text-primary hover:text-opacity-80 transition-colors" href="#"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.149 0-3.52.012-4.755.068-2.73.124-3.951 1.349-4.075 4.075-.056 1.235-.068 1.605-.068 4.755s.012 3.52.068 4.755c.124 2.726 1.345 3.951 4.075 4.075 1.235.056 1.605.068 4.755.068s3.52-.012 4.755-.068c2.73-.124 3.951-1.349 4.075-4.075.056-1.235.068-1.605.068-4.755s-.012-3.52-.068-4.755c-.124-2.726-1.345-3.951-4.075-4.075-1.235-.056-1.605-.068-4.755-.068z"></path><path d="M12 6.845a5.155 5.155 0 1 0 0 10.31 5.155 5.155 0 0 0 0-10.31zm0 8.852a3.697 3.697 0 1 1 0-7.394 3.697 3.697 0 0 1 0 7.394zm4.863-9.103a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z"></path></svg></a>
+                        <a class="text-primary hover:text-opacity-80 transition-colors" href="#"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.701V8.115l6.066 3.886-6.066 3.884z"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-slate-800 dark:bg-background-dark text-white">
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-lg font-bold mb-4">Yayasan Muda Peduli Saudara</h3>
+                <p class="text-gray-400">Menjadi jembatan kebaikan bagi mereka yang membutuhkan.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                <ul class="space-y-2">
+                    <li><a class="text-gray-400 hover:text-white" href="#">Tentang Kami</a></li>
+                    <li><a class="text-gray-400 hover:text-white" href="#">Program</a></li>
+                    <li><a class="text-gray-400 hover:text-white" href="#">Donasi</a></li>
+                    <li><a class="text-gray-400 hover:text-white" href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Hubungi Kami</h3>
+                <p class="text-gray-400">Jl. Kebaikan No. 123, Jakarta, Indonesia</p>
+                <p class="text-gray-400">info@mudapedulisaudara.org</p>
+                <p class="text-gray-400">(021) 123-4567</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Ikuti Kami</h3>
+                <div class="flex space-x-4">
+                    <a class="text-gray-400 hover:text-white" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h5.713c.735 0 1.325-.59 1.325-1.325V1.325C24 .59 23.405 0 22.675 0z"></path></svg></a>
+                    <a class="text-gray-400 hover:text-white" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.149 0-3.52.012-4.755.068-2.73.124-3.951 1.349-4.075 4.075-.056 1.235-.068 1.605-.068 4.755s.012 3.52.068 4.755c.124 2.726 1.345 3.951 4.075 4.075 1.235.056 1.605.068 4.755.068s3.52-.012 4.755-.068c2.73-.124 3.951-1.349 4.075-4.075.056-1.235.068-1.605.068-4.755s-.012-3.52-.068-4.755c-.124-2.726-1.345-3.951-4.075-4.075-1.235-.056-1.605-.068-4.755-.068z"></path><path d="M12 6.845a5.155 5.155 0 1 0 0 10.31 5.155 5.155 0 0 0 0-10.31zm0 8.852a3.697 3.697 0 1 1 0-7.394 3.697 3.697 0 0 1 0 7.394zm4.863-9.103a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z"></path></svg></a>
+                    <a class="text-gray-400 hover:text-white" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.701V8.115l6.066 3.886-6.066 3.884z"></path></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-500">
+            <p>© 2023 Yayasan Muda Peduli Saudara. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body></html>

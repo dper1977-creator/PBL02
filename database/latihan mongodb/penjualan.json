@@ -1,0 +1,15 @@
+[
+  {
+    "$lookup": {
+      "from": "Pelanggan",
+      "localField": "Kode_Produk",
+      "foreignField": "Kode_Produk",
+      "as": "Produk",
+
+      "from": "Pelanggan",
+      "localField": "Kode_Pelanggan",
+      "foreignField": "Kode_Pelanggan",
+      "as": "Pelanggan"
+    }
+  }
+]

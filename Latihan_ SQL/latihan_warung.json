@@ -1,0 +1,46 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "241d7551-b75c-4ad2-8fda-02a6e292999e",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1756438145275"
+        }
+      },
+      "favorite": {
+        "name": "",
+        "color": "color2"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjoxLCJzdGF0ZSI6W119"
+        }
+      }
+    },
+    {
+      "id": "6f404a20-ba8e-4526-a8ea-4b277240d098",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1758263325162"
+        }
+      },
+      "favorite": {
+        "name": "warungdp",
+        "color": "color2"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjoxLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "pbl02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "boolean_script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dper1977-creator/PBL02.git"
+  },
+  "private": true
+}

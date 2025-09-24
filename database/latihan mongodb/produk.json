@@ -1,0 +1,10 @@
+[
+{"Kode": "P001", "Nama": "Indomie", "Satuan": "Bungkus", "Qty": "10", "Harga": "3000"},
+{"Kode": "P002", "Nama": "Roti", "Satuan": "Pcs", "Qty": "3", "Harga": "18000"},
+{"Kode": "P003", "Nama": "Kecap", "Satuan": "Botol", "Qty": "8", "Harga": "4700"},
+{"Kode": "P004", "Nama": "Saos Tomat", "Satuan": "Botol", "Qty": "4", "Harga": "6000"},
+{"Kode": "P005", "Nama": "Bihun", "Satuan": "Bungkus", "Qty": "5", "Harga": "3500"},
+{"Kode": "P006", "Nama": "Sikat Gigi", "Satuan": "Pak", "Qty": "5", "Harga": "15000"},
+{"Kode": "P007", "Nama": "Pasta Gigi", "Satuan": "Pak", "Qty": "7", "Harga": "12000"},
+{"Kode": "P008", "Nama": "Saos Sambal", "Satuan": "Botol", "Qty": "5", "Harga": "7300"}
+]

@@ -1,0 +1,17 @@
+[
+{"Tgl_Jual": "2025-09-08", "No_Jual": "J001", "Kode_Pelanggan": "PLG03", "Kode_Produk": "P001", "Jumlah": "2"},
+{"Tgl_Jual": "2025-09-08", "No_Jual": "J001", "Kode_Pelanggan": "PLG03", "Kode_Produk": "P003", "Jumlah": "1"},
+{"Tgl_Jual": "2025-09-08", "No_Jual": "J001", "Kode_Pelanggan": "PLG03", "Kode_Produk": "P004", "Jumlah": "1"},
+{"Tgl_Jual": "2025-09-08", "No_Jual": "J002", "Kode_Pelanggan": "PLG07", "Kode_Produk": "P006", "Jumlah": "3"},
+{"Tgl_Jual": "2025-09-08", "No_Jual": "J002", "Kode_Pelanggan": "PLG07", "Kode_Produk": "P007", "Jumlah": "1"},
+{"Tgl_Jual": "2025-09-09", "No_Jual": "J003", "Kode_Pelanggan": "PLG02", "Kode_Produk": "P001", "Jumlah": "5"},
+{"Tgl_Jual": "2025-09-09", "No_Jual": "J003", "Kode_Pelanggan": "PLG02", "Kode_Produk": "P004", "Jumlah": "2"},
+{"Tgl_Jual": "2025-09-09", "No_Jual": "J003", "Kode_Pelanggan": "PLG02", "Kode_Produk": "P008", "Jumlah": "2"},
+{"Tgl_Jual": "2025-09-09", "No_Jual": "J003", "Kode_Pelanggan": "PLG02", "Kode_Produk": "P003", "Jumlah": "1"},
+{"Tgl_Jual": "2025-09-10", "No_Jual": "J004", "Kode_Pelanggan": "PLG05", "Kode_Produk": "P002", "Jumlah": "3"},
+{"Tgl_Jual": "2025-09-10", "No_Jual": "J004", "Kode_Pelanggan": "PLG05", "Kode_Produk": "P004", "Jumlah": "2"},
+{"Tgl_Jual": "2025-09-10", "No_Jual": "J004", "Kode_Pelanggan": "PLG05", "Kode_Produk": "P008", "Jumlah": "2"},
+{"Tgl_Jual": "2025-09-10", "No_Jual": "J004", "Kode_Pelanggan": "PLG05", "Kode_Produk": "P006", "Jumlah": "2"},
+{"Tgl_Jual": "2025-09-10", "No_Jual": "J004", "Kode_Pelanggan": "PLG05", "Kode_Produk": "P007", "Jumlah": "1"}
+]
+

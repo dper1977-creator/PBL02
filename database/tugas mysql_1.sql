@@ -2,6 +2,7 @@
 -- ============================
 DROP DATABASE IF EXISTS warung;
 CREATE DATABASE warung;
+
 USE warung;
 
 -- TABEL PELANGGAN
